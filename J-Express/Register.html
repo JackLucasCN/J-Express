@@ -1,0 +1,174 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JS/functions.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="BootstrapTheme/theme.css">
+    <style type="text/css">
+	body{
+		background-image: url(img/bg/1.jpg);
+		background-repeat:no-repeat;
+		animation:body 20s infinite;
+		}
+	@keyframes body {
+		25% {background-image: url(img/bg/2.jpg);}
+		50% {background-image: url(img/bg/3.jpg);}
+		75% {background-image: url(img/bg/4.jpg);}
+	}
+    </style>
+  </head><body>
+    <!--Guide bar without the seacher-->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <i class="fa fa-1x fa-fw fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html"><img height="20" alt="Brand" src="img/J_express_logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="index.html">主页</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">分类<i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">全部</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="">家用电器</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">音像制品</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">服裝</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">奢侈品</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">客戶服务 <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">客户服务</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">售后服务</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">联系客服</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">登入</a>
+            </li>
+            <li class="disabled">
+              <a href="#">注册</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="img/cn.png" width="20"> / <img src="img/en.png" width="20"> <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">中文</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">English</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="width:66%;margin-top:5%;margin-bottom:9%;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <span class="fa-5x text-shadow">Register</span>
+        </div>
+        <div class="col-md-12">
+          <hr>
+        </div>
+        <div class="span">
+          <form method="post" class="form-group col-md-12 col-md-offset-2">
+            <div class="form-group col-md-8">
+              <input class="form-control input-lg" type="text" placeholder="賬戶名稱">
+              <p class="help-block text-shadow">請輸入至少一個英文字符和一個數字</p>
+            </div>
+            <div class="form-group col-md-8">
+              <input class="form-control input-lg" type="password" placeholder="密碼">
+              <p class="help-block text-shadow">請至少包括一個大寫字母一個小寫字母和一位數字，並且長度不小於7位</p>
+            </div>
+            <div class="form-group col-md-8">
+              <input class="form-control input-lg" type="password" placeholder="密碼確認">
+              <p class="help-block text-shadow">再次輸入上面的密碼</p>
+            </div>
+            <div class="form-group col-md-8">
+              <select class="form-control input-lg">
+                <option>男性</option>
+                <option>女性</option>
+                <option>其他</option>
+              </select>
+              <p class="help-block text-shadow"></p>
+            </div>
+            <div class="form-group col-md-8">
+              <input class="form-control input-lg" type="email" placeholder="電子郵件地址">
+              <br>
+            </div>
+            <div class="form-group col-md-8">
+              <input class="form-control input-lg" type="text" placeholder="移動電話號碼">
+              <br>
+            </div>
+            <div class="row col-md-8">
+              <div class="col-md-6">
+                <button class="btn btn-block btn-lg btn-primary" type="submit">確認提交</button>
+              </div>
+              <div class="col-md-6 pull-right">
+                <button class="btn btn-block btn-default btn-lg" type="reset">重設</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Copyright © 2016 J-Express Studio. All rights reserved.</h4>
+            <p>E-mail : jacklucascn@gmail.com</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-weibo text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-wechat text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-qq text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</body></html>

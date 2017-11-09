@@ -1,0 +1,454 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JS/functions.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="BootstrapTheme/theme.css">
+  </head><body>
+    <!--Guide bar-->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <i class="fa fa-1x fa-fw fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html"><img height="20" alt="Brand" src="img/J_express_logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active disabled">
+              <a href="index.html">主页</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">分类<i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="Catalog.html">所有分类</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="">家用电器</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">音像制品</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">服裝</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">奢侈品</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">客戶服务 <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">购买指南</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">售后服务</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">联系客服</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="login.html">登入</a>
+            </li>
+            <li>
+              <a href="Register.html">注册</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="img/cn.png" width="20"> / <img src="img/en.png" width="20"> <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">中文</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">English</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form role="form">
+          <div class="col-md-offset-3 col-md-6">
+            <div class="form-group" style="margin-top:20px;">
+              <div class="input-group">
+                <input type="text" placeholder="鍵入商品名稱" class="form-control">
+                <span class="input-group-btn">
+                  <a class="btn btn-info" type="submit">Search</a>
+                </span>
+                  <span class="input-group-btn hidden-lg hidden-md">
+                    <a class="btn btn-block btn-primary fa fa-fw fa-shopping-cart text-muted"> 購物車</a>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="col-md-3 hidden-sm hidden-xs">
+          <a href="#"><i class="fa fa-3x fa-fw fa-shopping-cart pull-right text-primary"></i></a>
+        </div>
+      </div>
+    </div>
+    <!--Hidden block-->
+    <div class="section" style="margin-top:2%;">
+      <div class="container"></div>
+    </div>
+    <!--Contents-->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>全部分類</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">數碼家電</h1>
+            <ul class="media-list">
+              <li class="media">
+                <div class="media-body">
+                  <br>
+                  <div class="col-md-6">
+                    <h3 class="media-heading">
+                      <a class="links" href="#">移動電話 <i class="fa fa-2x fa-fw fa-mobile pull-right text-muted"></i></a>
+                    </h3>
+                    <hr>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="media-heading">
+                      <a class="links" href="#">桌上電腦 <i class="fa fa-2x fa-desktop fa-fw pull-right text-muted"></i></a>
+                    </h3>
+                    <a class="links" href="#">
+
+                <hr>
+
+                </a>
+                  </div>
+                  <a class="links" href="#"> <br>
+
+              </a>
+                  <div class="col-md-6">
+                    <a class="links" href="#"> </a>
+                    <h3 class="media-heading">
+                      <a class="links" href="#"></a>
+                      <a class="links" href="#">筆記型電腦 <i class="fa fa-2x fa-laptop pull-right text-muted"></i></a>
+                    </h3>
+                    <hr>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="media-heading">
+                      <a class="links" href="#">平板電腦 <i class="fa fa-2x fa-fw fa-tablet pull-right text-muted"></i></a>
+                    </h3>
+                    <hr>
+                  </div>
+                  <br>
+                  <div class="col-md-6">
+                    <h3 class="media-heading">
+                      <a class="links" href="#">網絡設備 <i class="fa fa-2x fa-chain fa-fw pull-right text-muted"></i></a>
+                    </h3>
+                    <hr>
+                  </div>
+                  <br>
+                  <div class="col-md-6">
+                    <h3 class="media-heading">
+                      <a class="links" href="#">影像裝置 <i class="fa fa-2x fa-camera fa-fw pull-right text-muted"></i></a>
+                    </h3>
+                    <hr>
+                  </div>
+                  <div class="col-md-6">
+                    <h3 class="media-heading">
+                      <a class="links" href="#">平板電視<img src="img/catalog_img/TV.png" class="pull-right" height="60px"></a>
+                    </h3>
+                    <hr>
+                  </div>
+                  <br>
+                  <div class="col-md-6">
+                    <h3 class="media-heading">
+                      <a class="links" href="#">數位板 <img class="pull-right" src="img/catalog_img/D_pad.png" height="65px"></a>
+                    </h3>
+                    <hr>
+                  </div>
+                </div>
+                <a class="links" href="#"> </a>
+              </li>
+              <a class="links" href="#"> </a>
+            </ul>
+            <a class="links" href="#"> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">音像製品</h1>
+            <ul class="media-list">
+              <li class="media">
+                <div class="media-body">
+                  <div class="col-md-12">
+                    <br>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">PlayStation® 4
+
+                        <img class="pull-right" src="img/catalog_img/ffe18bc07f4987eed129481171683dad.jpg" height="50px"></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">PlayStation® 3
+
+                        <img class="pull-right" src="img/catalog_img/ffe18bc07f4987eed129481171683dad.jpg" height="50px"></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">Xbox® ONE
+
+                        <img class="pull-right" src="img/catalog_img/xbox-logo-1000.png" height="50px"></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">Xbox® 360
+
+                        <img class="pull-right" src="img/catalog_img/xbox-logo-1000.png" height="50px"></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">Wii U™<img class="pull-right" src="img/catalog_img/698px-WiiU.svg.png" height="50px"></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">Wii™<img class="pull-right" src="img/catalog_img/800px-Wii.svg.png" width="110px"></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">實體版音樂光碟 <i class="fa fa-2x fa-fw fa-music pull-right text-muted"></i></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">藍光電影光碟 <i class="fa fa-2x fa-film fa-fw pull-right text-muted"></i></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">耳機<i class="fa fa-2x fa-fw fa-headphones pull-right text-muted"></i></a>
+                      </h3>
+                      <hr>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                      <h3 class="media-heading">
+                        <a class="links" href="#">音響揚聲器<i class="fa fa-2x fa-fw pull-right text-muted fa-bullhorn"></i></a>
+                      </h3>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a class="links" href="#"> </a>
+        </div>
+        <a class="links" href="#"> </a>
+      </div>
+      <a class="links" href="#"> </a>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">服裝</h1>
+            <div class="section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#">
+
+                      <figure>
+
+                      <img class="media-object" src="img/female.jpeg" width="100%">
+
+                      <figcaption>
+
+                       <h2 class="text-center">
+
+                         女士
+
+                        </h2>
+
+                      </figcaption>
+
+                      </figure>
+
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#">
+
+                    <figure>
+
+                      <img class="media-object" src="img/male.jpeg" width="100%">
+
+                      <figcaption>
+
+                        <h2 class="text-center">男士</h2>
+
+                      </figcaption>
+
+                      </figure></a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#">
+
+                    <figure>
+
+                      <img class="media-object" src="img/child.jpeg" width="100%">
+
+                      <figcaption>
+
+                        <h2 class="text-center">兒童</h2>
+
+                      </figcaption>
+
+                      </figure></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">奢侈品</h1>
+            <div class="section">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#">
+
+                      <figure>
+
+                      <img class="media-object" src="img/453764_LR8BG_9067_001_085_0000_Light-Gucci-Nymphea.jpg" width="100%">
+
+                      <figcaption>
+
+                       <h2 class="text-center">
+
+                         箱包
+
+                        </h2>
+
+                      </figcaption>
+
+                      </figure>
+
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#">
+
+                    <figure>
+
+                      <img class="media-object" src="img/n_5-_-_-35ml.3145891055108.jpg" width="100%">
+
+                      <figcaption>
+
+                        <h2 class="text-center">化妝品</h2>
+
+                      </figcaption>
+
+                      </figure></a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#">
+
+                    <figure>
+
+                      <img class="media-object" src="img/glasses.jpg" width="100%">
+
+                      <figcaption>
+
+                        <h2 class="text-center" contenteditable="true">配飾</h2>
+
+                      </figcaption>
+
+                      </figure></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Copyright © 2016 J-Express Studio. All rights reserved.</h4>
+            <p>E-mail : jacklucascn@gmail.com</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-weibo text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-wechat text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-qq text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>

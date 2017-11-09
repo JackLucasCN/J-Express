@@ -1,0 +1,517 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JS/functions.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="BootstrapTheme/theme.css">
+  </head><body>
+    <!--Guide bar-->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <i class="fa fa-1x fa-fw fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html"><img height="20" alt="Brand" src="img/J_express_logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active disabled">
+              <a href="index.html">主页</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">分类<i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="Catalog.html">所有分类</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="">家用电器</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">音像制品</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">服裝</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">奢侈品</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">客戶服务 <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">购买指南</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">售后服务</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">联系客服</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="login.html">登入</a>
+            </li>
+            <li>
+              <a href="Register.html">注册</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="img/cn.png" width="20"> / <img src="img/en.png" width="20"> <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="#">中文</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">English</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form role="form">
+          <div class="col-md-offset-3 col-md-6">
+            <div class="form-group" style="margin-top:20px;">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="输入要检索的商品名称">
+                <span class="input-group-btn">
+                  <a class="btn btn-info" type="submit">Search</a>
+                </span>
+                  <span class="input-group-btn hidden-lg hidden-md">
+                    <a class="btn btn-block btn-primary fa fa-fw fa-shopping-cart text-muted"> 購物車</a>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="col-md-3 hidden-sm hidden-xs">
+          <a href="#"><i class="fa fa-3x fa-fw fa-shopping-cart pull-right text-primary"></i></a>
+        </div>
+      </div>
+    </div>
+    <!--hidden block-->
+    <div class="section" style="margin-top:2%;">
+      <div class="container"></div>
+    </div>
+    <!--Contents-->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1">
+            <a class="btn btn-block disabled"><h3>类别
+
+              </h3></a>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <a class="btn btn-block" href="#"><h3>
+
+              家用电器
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>
+
+              音像制品
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block disabled"><h3>服裝<i class="fa fa-fw fa-check"></i></h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>
+
+              奢侈品
+
+              </h3></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1">
+            <a class="btn btn-block disabled"><h3>
+
+              </h3></a>
+          </div>
+          <div class="col-md-2 col-md-offset-2">
+            <a class="btn btn-block"><h3>
+
+              男士
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block disabled"><h3>
+
+              女士
+
+              <i class="fa fa-fw fa-check"></i></h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>
+
+              儿童
+
+              </h3></a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-1">
+            <a class="btn btn-block disabled"><h3>品牌
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>
+
+              SLY</h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block disabled"><h3>UGG<i class="fa fa-fw fa-check"></i>
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>PONY</h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>Paul Frank</h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>AAPE</h3></a>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <a class="btn btn-block"><h3>
+
+              ZARA</h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>BURTON
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>LEVI'S</h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>U／TI</h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>LEE</h3></a>
+          </div>
+          <div class="col-md-1">
+            <a class="btn btn-block"><h3><i class="fa fa-fw fa-angle-down"></i></h3></a>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-1">
+            <a class="btn btn-block disabled"><h3>价格区间
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block" href="#"><h3>0-500
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>501-1000
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block disabled"><h3>1001-2000<i class="fa fa-fw fa-check"></i></h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>2001-3000
+
+              </h3></a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-block"><h3>3001-4000
+
+              </h3></a>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/e0b56b5cd494e523925c2d3964936238.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG 女士休闲牛皮雪地靴</h4>
+
+            <h4>¥1590.00 RMB</h4>
+
+            </a>
+            <strike class="text-info">¥1680.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/efade65f2676b9b73eb55272cc211040.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG女士雪地牛麂皮贝莉迷你靴</h4>
+
+              <h4>¥1480.00 RMB</h4></a>
+            <strike class="text-info">¥1380.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/fa2e6fc739454e3765e867babfd2acb5.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG 女士羊皮雪地贝莉系列短靴</h4>
+
+              <h4>¥1780.00 RMB</h4></a>
+            <strike class="text-info">¥1680.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/7f1117130539f6bb9d022d423431ef34 .jpg" class="img-responsive img-rounded">
+
+            <h4>UGG女士牛皮防水葛阑地鞋</h4>
+
+              <h4>¥1000.00 RMB</h4></a>
+            <strike class="text-info">¥1080.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/e0b56b5cd494e523925c2d3964936238.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG 女士休闲牛皮雪地靴</h4>
+
+            <h4>¥1590.00 RMB</h4>
+
+            </a>
+            <strike class="text-info">¥1680.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/efade65f2676b9b73eb55272cc211040.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG女士雪地牛麂皮贝莉迷你靴</h4>
+
+              <h4>¥1480.00 RMB</h4></a>
+            <strike class="text-info">¥1380.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/fa2e6fc739454e3765e867babfd2acb5.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG 女士羊皮雪地贝莉系列短靴</h4>
+
+              <h4>¥1780.00 RMB</h4></a>
+            <strike class="text-info">¥1680.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/7f1117130539f6bb9d022d423431ef34 .jpg" class="img-responsive img-rounded">
+
+            <h4>UGG女士牛皮防水葛阑地鞋</h4>
+
+              <h4>¥1000.00 RMB</h4></a>
+            <strike class="text-info">¥1080.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/e0b56b5cd494e523925c2d3964936238.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG 女士休闲牛皮雪地靴</h4>
+
+            <h4>¥1590.00 RMB</h4>
+
+            </a>
+            <strike class="text-info">¥1680.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/efade65f2676b9b73eb55272cc211040.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG女士雪地牛麂皮贝莉迷你靴</h4>
+
+              <h4>¥1480.00 RMB</h4></a>
+            <strike class="text-info">¥1380.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/fa2e6fc739454e3765e867babfd2acb5.jpg" class="img-responsive img-rounded">
+
+            <h4>UGG 女士羊皮雪地贝莉系列短靴</h4>
+
+              <h4>¥1780.00 RMB</h4></a>
+            <strike class="text-info">¥1680.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+
+            <img src="img/7f1117130539f6bb9d022d423431ef34 .jpg" class="img-responsive img-rounded">
+
+            <h4>UGG女士牛皮防水葛阑地鞋</h4>
+
+              <h4>¥1000.00 RMB</h4></a>
+            <strike class="text-info">¥1080.00 RMB</strike>
+            <span>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+              <i class="fa fa-fw fa-lg fa-star pull-right text-warning"></i>
+            </span>
+          </div>
+        </div>
+        <div class="row col-md-12">
+          <div class="col-md-6">
+            <br>
+            <i class="fa fa-3x fa-fw fa-angle-down col-md-offset-12"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4>Copyright © 2016 J-Express Studio. All rights reserved.</h4>
+            <p>E-mail : jacklucascn@gmail.com</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-weibo text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-wechat text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-qq text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
